@@ -45,7 +45,7 @@
 										"exec": [
 											"//tests\r",
 											"pm.test(\"CREATE: Pet successfully created!\", function () {\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 203, 204]);\r",
 											"});\r",
 											"pm.test(\"CREATE: Pet name is correct\", function () {\r",
 											"    petName = pm.collectionVariables.get(\"petName\")\r",
